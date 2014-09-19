@@ -1,0 +1,43 @@
+<html> 
+<head> 
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.js"></script>
+<script language="JavaScript" type="text/javascript"> 
+function makeFrame() { 
+   ifrm = document.createElement("IFRAME"); 
+   ifrm.setAttribute("src", "http://developerfusion.com/"); 
+   ifrm.style.width = 640+"px"; 
+   ifrm.style.height = 480+"px"; 
+   document.body.appendChild(ifrm); 
+} 
+function makecall(){
+	<div data-role="popup" id="popupVideo" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content">
+
+    <iframe src="http://player.vimeo.com/video/41135183" width="497" height="298" seamless></iframe>
+	 
+</div>
+<script language="javascript" type="text/javascript">
+</script>
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+	newwindow=window.open(url,'name','height=600,width=600');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+// -->
+</script>
+
+}
+
+</script> 
+</head> 
+<body> 
+<p><a href="#" onMouseDown="makeFrame()">GO! </a></p> 
+<a href="#popupVideo" data-rel="popup" data-position-to="window" data-role="button" data-theme="b" data-inline="true" onclick="makecall()">Launch video player</a>	
+
+
+<a href="popupex.html" onclick="return popitup('http://www.google.com')"
+	>Link to popup</a>
+</body> 
+</html> 

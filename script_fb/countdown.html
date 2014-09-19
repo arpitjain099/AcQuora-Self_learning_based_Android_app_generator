@@ -1,0 +1,23 @@
+<h3>Desired Result</h3>
+<div class="well" style="font-size:30px;">
+<span id="countdown">Loading</span>
+
+<script>
+// set the date we're counting down to
+var target_date = new Date("Nov 17, 2013 21:15:00 GMT+0530").getTime();
+// variables for time units
+var days, hours, minutes, seconds;
+
+// get tag element
+var countdown = document.getElementById("countdown");
+var sec=60;
+// update the tag with id "countdown" every 1 second
+setInterval(function () {
+
+    sec--;
+    // format countdown string + set tag value
+    countdown.innerHTML =  sec + "s";   
+    if(sec==0)location.reload();
+}, 1000);
+</script>
+</div>
